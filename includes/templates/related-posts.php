@@ -58,7 +58,7 @@ $heading = sanitize_text_field( $this->options['heading'] ?? '' );
                             $author_id = get_post_field( 'post_author', $related_post );
                             printf(
                                 /* translators: %s: author name */
-                                esc_html__( '__By %s', 'related-posts' ),
+                                esc_html__( '_By %s', 'related-posts' ),
                                 '<span class="author-name">' . esc_html( get_the_author_meta( 'display_name', $author_id)) . '</span>'
                             );
                             ?>
